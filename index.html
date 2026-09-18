@@ -101,7 +101,8 @@
     'use strict';
     var qs = new URLSearchParams(location.search);
     var LIFF_ID = qs.get('liffId') || '2004722900-At6plwjk';   // <- LIFF ID ของหน้านี้
-    var API = qs.get('api') || 'https://line-console-pi.vercel.app';  // หน้านี้อยู่คนละโฮสต์ — เรียก backend ข้ามโดเมน (CORS เปิดไว้แล้ว)
+    var API = qs.get('api') || 'https://line-console-woad.vercel.app';  // หน้านี้อยู่คนละโฮสต์ — เรียก backend ข้ามโดเมน (CORS เปิดไว้แล้ว)
+    // ย้ายจาก line-console-pi.vercel.app เมื่อ 18/09 — บัญชี Vercel เดิม (theerapat1) ถูกระงับเพราะบัตรจ่ายเงินไม่ผ่าน
     var $app = $('#app');
     var state = {};
 
